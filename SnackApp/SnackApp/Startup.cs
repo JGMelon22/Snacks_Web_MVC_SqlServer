@@ -4,6 +4,8 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using SnackApp.Context;
+using SnackApp.Repositories;
 
 namespace SnackApp
 {
@@ -20,15 +22,20 @@ namespace SnackApp
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
-            
-            /* // DB Connection
-            services.AddDbContext<SnackAppMvcContext>(options =>
-                options.UseSqlServer(Configuration.GetConnectionString("SnackAppMvcContext"), builder =>
-                    builder.MigrationsAssembly("SnackApp")));
-            */
-            }
-        
-        
+
+            // DB Connection
+            services.AddDbContext<AppDbContext>(options =>
+                options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+            services.AddMvc();
+
+            /*
+            Transient objects are always different;
+            a new instance is provided to every controller and every service.
+             */
+            services.AddTransient<ICategoriasRepository, CategoriaRepository>();
+            services.AddTransient<ILancheRepository, LancheRepository>();
+        }
+
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
