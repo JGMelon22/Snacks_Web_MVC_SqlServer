@@ -8,6 +8,7 @@ namespace SnackApp.Repositories
     {
         // ctor for Dependency Injection
         private readonly AppDbContext _context;
+
         public CategoriaRepository(AppDbContext contexto)
         {
             _context = contexto;

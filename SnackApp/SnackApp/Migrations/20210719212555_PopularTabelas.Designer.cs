@@ -9,8 +9,8 @@ using SnackApp.Context;
 namespace SnackApp.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20210716232826_Insert_Into_Tables")]
-    partial class Insert_Into_Tables
+    [Migration("20210719212555_PopularTabelas")]
+    partial class PopularTabelas
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

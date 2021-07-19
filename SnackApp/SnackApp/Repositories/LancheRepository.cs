@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using Microsoft.EntityFrameworkCore;
@@ -25,9 +26,9 @@ namespace SnackApp.Repositories
 
         public Lanche1 GetLancheById<Lanche1>(int lancheId)
         {
-            throw new System.NotImplementedException();
+            throw new NotImplementedException();
         }
-        
+
         public Lanche GetLancheById(int lancheId)
         {
             return _context.Lanches.FirstOrDefault(l => l.LancheId == lancheId);

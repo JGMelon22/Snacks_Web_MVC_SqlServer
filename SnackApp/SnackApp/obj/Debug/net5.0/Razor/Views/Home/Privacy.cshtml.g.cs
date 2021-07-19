@@ -13,21 +13,21 @@ namespace AspNetCore
     using Microsoft.AspNetCore.Mvc.Rendering;
     using Microsoft.AspNetCore.Mvc.ViewFeatures;
 #nullable restore
-#line 1 "/home/joao/Documents/Snacks_MVC_SqlServer/SnackApp/SnackApp/Views/_ViewImports.cshtml"
+#line 2 "/home/joao/Documents/Snacks_MVC_SqlServer/SnackApp/SnackApp/Views/_ViewImports.cshtml"
 using SnackApp;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "/home/joao/Documents/Snacks_MVC_SqlServer/SnackApp/SnackApp/Views/_ViewImports.cshtml"
+#line 3 "/home/joao/Documents/Snacks_MVC_SqlServer/SnackApp/SnackApp/Views/_ViewImports.cshtml"
 using SnackApp.Models;
 
 #line default
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"87d723462edd824d99bcc7982cd10b8c4b613469", @"/Views/Home/Privacy.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"72736e29c72a0602f9b0920967e91ac4a3ea7331", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"a7df5d5029a04cae00130262845a3d14d6710ba6", @"/Views/_ViewImports.cshtml")]
     public class Views_Home_Privacy : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         #pragma warning disable 1998

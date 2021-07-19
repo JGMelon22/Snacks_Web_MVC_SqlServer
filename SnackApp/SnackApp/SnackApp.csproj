@@ -21,4 +21,36 @@
       <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="5.0.2" />
     </ItemGroup>
 
+    <ItemGroup>
+      <_ContentIncludedByDefault Remove="wwwroot\Imagens_Lanches31\acessonegado.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\Imagens_Lanches31\adminarea.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\Imagens_Lanches31\carousel1.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\Imagens_Lanches31\carousel11.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\Imagens_Lanches31\carousel12.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\Imagens_Lanches31\carousel13.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\Imagens_Lanches31\carousel14.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\Imagens_Lanches31\carousel2.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\Imagens_Lanches31\carousel3.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\Imagens_Lanches31\carousel4.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\Imagens_Lanches31\carousel5.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\Imagens_Lanches31\cart-5-16.ico" />
+      <_ContentIncludedByDefault Remove="wwwroot\Imagens_Lanches31\check-icon32.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\Imagens_Lanches31\check-icon48.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\Imagens_Lanches31\delete.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\Imagens_Lanches31\Envelope-icon.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\Imagens_Lanches31\Envelope-icon24.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\Imagens_Lanches31\error1.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\Imagens_Lanches31\facapedido1.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\Imagens_Lanches31\faleconosco1.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\Imagens_Lanches31\Full-Cart-icon.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\Imagens_Lanches31\Home-icon.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\Imagens_Lanches31\Home-icon48.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\Imagens_Lanches31\Home-iconred.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\Imagens_Lanches31\login1.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\Imagens_Lanches31\phone-app-icon.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\Imagens_Lanches31\phone-app-icon48.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\Imagens_Lanches31\registro1.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\Imagens_Lanches31\remove.ico" />
+    </ItemGroup>
+
 </Project>
