@@ -27,8 +27,7 @@ A basic CRUD web page for register sellers and departments made using ASP.NET Co
 - Inside the file "appsettings.json", change the connection string to your SQL Server instance according to your needs.
 
 - TODO: change the image to the new connection string name (same print otherwise)
-![Screenshot_20210713_142335](https://user-images.githubusercontent.com/73988556/125498401-4baccacd-be49-420f-be61-e05f50156844.png)
-
+![Screenshot_20210719_200323](https://user-images.githubusercontent.com/73988556/126238586-0de79583-6c9b-46ac-9adf-b5af345b979e.png)
 
 # Page illustration
 
