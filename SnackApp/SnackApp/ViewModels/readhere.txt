@@ -1,0 +1,1 @@
+On this folder, we are organising our project to fit into the ViewModel Pattern.

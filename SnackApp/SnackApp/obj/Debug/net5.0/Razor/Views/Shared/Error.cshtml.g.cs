@@ -26,8 +26,15 @@ using SnackApp.Models;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 4 "/home/joao/Documents/Snacks_MVC_SqlServer/SnackApp/SnackApp/Views/_ViewImports.cshtml"
+using SnackApp.ViewModels;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"20fc76d5ca492ee449acb1af331b1c15fce9fea9", @"/Views/Shared/Error.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"a7df5d5029a04cae00130262845a3d14d6710ba6", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"786ee539f40e6e6919af896675d123463531ed1f", @"/Views/_ViewImports.cshtml")]
     public class Views_Shared_Error : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<ErrorViewModel>
     {
         #pragma warning disable 1998

@@ -1,12 +1,12 @@
 <!-- Bootstrap design -->
-
-@model IEnumerable<Lanche>
+<!-- Typed view --> 
+@model SnackApp.ViewModels.LancheListViewModel
 
 <div>
-    <h2>Todos os Lanches</h2>
+    <h2>@Model.CategoriaAtual</h2>
 </div>
 
-@foreach (var lanche in Model)
+@foreach (var lanche in Model.Lanches)
 {
     <div class="col-sm-4 col-lg-4 col-md-4">
         <div class="thumbnail">

@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using SnackApp.Repositories;
+using SnackApp.ViewModels;
 
 namespace SnackApp.Controllers
 {
@@ -22,8 +23,16 @@ namespace SnackApp.Controllers
             ViewBag.Lanche = "Lanches";
             ViewData["Categoria"] = "Categoria";
 
-            var lanches = _lancheRepository.Lanches;
-            return View(lanches);
+            // var lanches = _lancheRepository.Lanches;
+            // return View(lanches);
+
+            // Applying the ViwModel pattern
+            var lancheslistViewModel = new LancheListViewModel();
+
+            // Obtains a snack list 
+            lancheslistViewModel.Lanches = _lancheRepository.Lanches;
+            lancheslistViewModel.CategoriaAtual = "Categoria Atual";
+            return View(lancheslistViewModel);
         }
     }
 }
