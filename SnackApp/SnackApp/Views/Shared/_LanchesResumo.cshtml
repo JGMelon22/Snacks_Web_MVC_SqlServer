@@ -1,0 +1,18 @@
+<!-- Need to reference "Lanche" because we are displaying -->
+<!-- "Lanche" infos -->
+<!-- https://www.c-sharpcorner.com/UploadFile/ff2f08/partial-view-in-mvc/ -->
+
+@model Lanche
+
+<div class="col-sm-4 col-lg-4 col-md-4">
+    <div class="thumbnail">
+        <img src="@Model.ImagemUrl" class="-rounded" alt=""/>
+    </div>
+    <div class="caption">
+        <h3 class="pull-right"> @Model.Preco.ToString("c")</h3>
+        <h3>@Model.Nome</h3>
+        <p>
+            @Model.DescricaoCurta
+        </p>
+    </div>
+</div>

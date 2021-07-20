@@ -1,10 +1,12 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using SnackApp.Context;
+using SnackApp.Models;
 using SnackApp.Repositories;
 
 namespace SnackApp
@@ -34,6 +36,14 @@ namespace SnackApp
              */
             services.AddTransient<ICategoriasRepository, CategoriaRepository>();
             services.AddTransient<ILancheRepository, LancheRepository>();
+
+            // Allow us to have access to the session context
+            services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+
+            // Defines the shopping cart
+            services.AddScoped(cp => CarrinhoCompra.GetCarrinho(cp));
+            services.AddMemoryCache();
+            services.AddSession();
         }
 
 
@@ -54,6 +64,7 @@ namespace SnackApp
 
             app.UseHttpsRedirection();
             app.UseStaticFiles();
+            app.UseSession();
 
             app.UseRouting();
 
