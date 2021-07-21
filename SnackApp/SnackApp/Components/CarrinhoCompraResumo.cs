@@ -1,4 +1,3 @@
-using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
 using SnackApp.Models;
 using SnackApp.ViewModels;
@@ -18,9 +17,9 @@ namespace SnackApp.Components
         // Method 
         public IViewComponentResult Invoke()
         {
-            // var itens = _carrinhoCompra.GetCarrinhoCompraItens();
+            var itens = _carrinhoCompra.GetCarrinhoCompraItens();
 
-            var itens = new List<CarrinhoCompraItem> {new(), new()};
+            // var itens = new List<CarrinhoCompraItem> {new(), new()};
             _carrinhoCompra.CarrinhoCompraItens = itens;
 
             var CarrinhoCompraVM = new CarrinhoCompraViewModel

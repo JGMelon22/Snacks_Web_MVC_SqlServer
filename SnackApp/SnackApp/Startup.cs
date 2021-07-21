@@ -72,6 +72,19 @@ namespace SnackApp
 
             app.UseEndpoints(endpoints =>
             {
+                // Change here for Admin
+                // routes.MapRoute(
+                // name:"AdminArea", 
+                // pattern : "{area:exist}/{controller=Admin}/{action=Index}/{id?"}
+                // );
+
+
+                endpoints.MapControllerRoute(
+                    "categoriaFiltro",
+                    "Lanche/{action}/{categoria?}",
+                    new {Controller = "Lanche", action = "List"}
+                );
+
                 // Define the routes
                 endpoints.MapControllerRoute(
                     "default",

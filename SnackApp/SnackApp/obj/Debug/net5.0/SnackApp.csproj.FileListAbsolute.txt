@@ -153,3 +153,5 @@
 /home/joao/Documents/Snacks_MVC_SqlServer/SnackApp/SnackApp/obj/Debug/net5.0/Razor/Views/Shared/_Carousel.cshtml.g.cs
 /home/joao/Documents/Snacks_MVC_SqlServer/SnackApp/SnackApp/obj/Debug/net5.0/Razor/Views/Shared/Components/CarrinhoCompraResumo/Default.cshtml.g.cs
 /home/joao/Documents/Snacks_MVC_SqlServer/SnackApp/SnackApp/obj/Debug/net5.0/Razor/Views/Contato/Index.cshtml.g.cs
+/home/joao/Documents/Snacks_MVC_SqlServer/SnackApp/SnackApp/obj/Debug/net5.0/Razor/Views/Shared/Components/CategoriaMenu/Default.cshtml.g.cs
+/home/joao/Documents/Snacks_MVC_SqlServer/SnackApp/SnackApp/obj/Debug/net5.0/Razor/Views/Lanche/Details.cshtml.g.cs
