@@ -5555,19 +5555,19 @@
     ]
   },
   "packageFolders": {
-    "/home/joao/.nuget/packages/": {}
+    "/home/joaogabriel/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/joao/Documents/Snacks_MVC_SqlServer/SnackApp/SnackApp/SnackApp.csproj",
+      "projectUniqueName": "/home/joaogabriel/Documents/Snacks_Web_MVC_SqlServer/SnackApp/SnackApp/SnackApp.csproj",
       "projectName": "SnackApp",
-      "projectPath": "/home/joao/Documents/Snacks_MVC_SqlServer/SnackApp/SnackApp/SnackApp.csproj",
-      "packagesPath": "/home/joao/.nuget/packages/",
-      "outputPath": "/home/joao/Documents/Snacks_MVC_SqlServer/SnackApp/SnackApp/obj/",
+      "projectPath": "/home/joaogabriel/Documents/Snacks_Web_MVC_SqlServer/SnackApp/SnackApp/SnackApp.csproj",
+      "packagesPath": "/home/joaogabriel/.nuget/packages/",
+      "outputPath": "/home/joaogabriel/Documents/Snacks_Web_MVC_SqlServer/SnackApp/SnackApp/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/joao/.nuget/NuGet/NuGet.Config"
+        "/home/joaogabriel/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
@@ -5646,7 +5646,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/home/joao/.dotnet/sdk/5.0.205/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/home/joaogabriel/.dotnet1/sdk/5.0.301/RuntimeIdentifierGraph.json"
       }
     }
   }
