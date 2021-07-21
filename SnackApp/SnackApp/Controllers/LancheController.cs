@@ -71,5 +71,28 @@ namespace SnackApp.Controllers
                 return View("~/Views/Error/Error.cshtml");
             return View(lanche);
         }
+
+        // Action method
+        public IActionResult Search(string searchString)
+        {
+            var _searchString = searchString;
+            IEnumerable<Lanche> lanches;
+            var _categoriaAtual = string.Empty;
+
+            // If searchString is empty, return all snacks
+            if (string.IsNullOrEmpty(_searchString))
+                lanches = _lancheRepository.Lanches
+                    .OrderBy(l => l.LancheId);
+
+            else
+                // If has content, search based on the typed text
+                lanches = _lancheRepository.Lanches
+                    .Where(l => l.Nome
+                        .ToLower()
+                        .Contains(_searchString.ToLower()));
+
+            return View("~/Views/Lanche/List.cshtml",
+                new LancheListViewModel {Lanches = lanches, CategoriaAtual = "Todos os lanches"});
+        }
     }
 }

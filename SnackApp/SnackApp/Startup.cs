@@ -36,6 +36,7 @@ namespace SnackApp
              */
             services.AddTransient<ICategoriasRepository, CategoriaRepository>();
             services.AddTransient<ILancheRepository, LancheRepository>();
+            services.AddTransient<IPedidoRepository, PedidoRepository>();
 
             // Allow us to have access to the session context
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
