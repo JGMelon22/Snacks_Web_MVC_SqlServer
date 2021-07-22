@@ -312,3 +312,5 @@
 /home/joaogabriel/Documents/Snacks_Web_MVC_SqlServer/SnackApp/SnackApp/obj/Debug/net5.0/ref/SnackApp.dll
 /home/joaogabriel/Documents/Snacks_Web_MVC_SqlServer/SnackApp/SnackApp/obj/Debug/net5.0/SnackApp.pdb
 /home/joaogabriel/Documents/Snacks_Web_MVC_SqlServer/SnackApp/SnackApp/obj/Debug/net5.0/SnackApp.genruntimeconfig.cache
+/home/joao/Documents/Snacks_MVC_SqlServer/SnackApp/SnackApp/obj/Debug/net5.0/Razor/Views/Pedido/Checkout.cshtml.g.cs
+/home/joao/Documents/Snacks_MVC_SqlServer/SnackApp/SnackApp/obj/Debug/net5.0/Razor/Views/Pedido/CheckoutCompleto.cshtml.g.cs

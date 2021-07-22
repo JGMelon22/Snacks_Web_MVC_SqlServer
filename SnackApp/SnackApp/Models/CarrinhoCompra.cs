@@ -98,6 +98,7 @@ namespace SnackApp.Models
             return quantidadeLocal;
         }
 
+        // Add to cart
         public List<CarrinhoCompraItem> GetCarrinhoCompraItens()
         {
             return CarrinhoCompraItens ??
@@ -107,6 +108,7 @@ namespace SnackApp.Models
                            .ToList());
         }
 
+        // Clear cart
         public void LimparCarrinho()
         {
             var carrinhoItens = _context.CarrinhoCompraItens
@@ -117,6 +119,7 @@ namespace SnackApp.Models
             _context.SaveChanges();
         }
 
+        // Calculates the total price
         public decimal GetCarrinhoCompraTotal()
         {
             var total = _context.CarrinhoCompraItens.Where(c => c.CarrinhoCompraId == CarrinhoCompraId)

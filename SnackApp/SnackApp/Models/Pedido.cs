@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
 
 namespace SnackApp.Models
@@ -33,7 +34,7 @@ namespace SnackApp.Models
         public string Endereco2 { get; set; }
 
         [Required(ErrorMessage = "Informe o seu CEP")]
-        [Display(Name = "cep")]
+        [Display(Name = "CEP")]
         [StringLength(10, MinimumLength = 8)]
         public string Cep { get; set; }
 
@@ -56,7 +57,14 @@ namespace SnackApp.Models
             ErrorMessage = "O email não possui um formato correto")]
         public string Email { get; set; }
 
-        [BindNever] [ScaffoldColumn(false)] public decimal PedidoTotal { get; set; }
+        // [BindNever] [ScaffoldColumn(false)] public decimal PedidoTotal { get; set; }
+
+        [BindNever]
+        [ScaffoldColumn(false)]
+        [Column(TypeName = "decimal(18,2)")]
+        [Display(Name = "Total do Pedido")]
+        public decimal PedidoTotal { get; set; }
+
 
         [BindNever] [ScaffoldColumn(false)] public DateTime PedidoEnviado { get; set; }
     }

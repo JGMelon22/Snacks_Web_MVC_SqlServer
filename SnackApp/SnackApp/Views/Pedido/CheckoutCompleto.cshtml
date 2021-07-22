@@ -1,0 +1,34 @@
+@model Pedido
+
+<div class="container marginTop1">
+
+    <div class="jumbotron">
+        <h2>@ViewBag.CheckoutCompletoMensagem</h2>
+    </div>
+    <div class="card">
+        <div class="card-body">
+            <p>Cliente : <strong>@Model.Nome</strong>
+            <p>Data do Pedido : <strong>@Model.PedidoEnviado</strong>
+            <p>Número do Pedido : <strong>@Model.PedidoID</strong></p>
+            <table class="table">
+                <tr>
+                    <th></th>
+                    <th>Quantidade</th>
+                    <th>Lanche</th>
+                    <th>Preço</th>
+                </tr>
+                @foreach (var item in Model.PedidoItens)
+                {
+                    <tr>
+                        <td>
+                            <img src="@item.Lanche.ImagemUrl" width="40" height="40"/>
+                        </td>
+                        <td>@item.Quantidade</td>
+                        <td>@item.Lanche.Nome</td>
+                        <td>@item.Lanche.Preco</td>
+                    </tr>
+                }
+            </table>
+        </div>
+    </div>
+</div>
