@@ -1,4 +1,5 @@
 using System.Linq;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using SnackApp.Models;
 using SnackApp.Repositories;
@@ -38,6 +39,7 @@ namespace SnackApp.Controllers
         }
 
         // Method which adds an item on the shopping cart
+        [Authorize]
         public RedirectToActionResult AdicionarItemNoCarrinhoCompra(int lancheId)
         {
             var lancheSelecionado = _lancheRepository.Lanches.FirstOrDefault(p => p.LancheId == lancheId);
@@ -49,6 +51,7 @@ namespace SnackApp.Controllers
 
 
         // Method which remove an item from the shopping cart
+        [Authorize]
         public IActionResult RemoverItemDoCarrinhoCompra(int lancheId)
         {
             var lancheSelecionado = _lancheRepository.Lanches

@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using SnackApp.Models;
 using SnackApp.Repositories;
@@ -6,9 +7,8 @@ namespace SnackApp.Controllers
 {
     public class PedidoController : Controller
     {
-        private readonly CarrinhoCompra _carrinhoCompra;
-
         // Dependency injection
+        private readonly CarrinhoCompra _carrinhoCompra;
         private readonly IPedidoRepository _pedidoRepository;
 
         // ctor
@@ -18,7 +18,7 @@ namespace SnackApp.Controllers
             _carrinhoCompra = carrinhoCompra;
         }
 
-        // Method for checkout
+        [Authorize]
         public IActionResult Checkout()
         {
             return View();
@@ -26,6 +26,7 @@ namespace SnackApp.Controllers
 
         // HttpPost Method
         [HttpPost]
+        [Authorize]
         public IActionResult Checkout(Pedido pedido)
         {
             var items = _carrinhoCompra.GetCarrinhoCompraItens();

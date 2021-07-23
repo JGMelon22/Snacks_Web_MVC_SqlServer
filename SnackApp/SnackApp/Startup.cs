@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -28,6 +29,12 @@ namespace SnackApp
             // DB Connection
             services.AddDbContext<AppDbContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+
+            // Middleware for authentication service
+            services.AddIdentity<IdentityUser, IdentityRole>()
+                .AddEntityFrameworkStores<AppDbContext>()
+                .AddDefaultTokenProviders();
+
             services.AddMvc();
 
             /*
@@ -66,6 +73,9 @@ namespace SnackApp
             app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.UseSession();
+
+            // Middleware for authentication
+            app.UseAuthentication();
 
             app.UseRouting();
 

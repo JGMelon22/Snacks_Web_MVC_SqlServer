@@ -1,10 +1,12 @@
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using SnackApp.Models;
 
 namespace SnackApp.Context
 {
     // Inherit from DbContext to represent a session with the DB 
-    public class AppDbContext : DbContext
+    public class AppDbContext : IdentityDbContext<IdentityUser>
     {
         // ctor
         // DbContextOptions references the class AppDbContext

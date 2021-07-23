@@ -314,3 +314,7 @@
 /home/joaogabriel/Documents/Snacks_Web_MVC_SqlServer/SnackApp/SnackApp/obj/Debug/net5.0/SnackApp.genruntimeconfig.cache
 /home/joao/Documents/Snacks_MVC_SqlServer/SnackApp/SnackApp/obj/Debug/net5.0/Razor/Views/Pedido/Checkout.cshtml.g.cs
 /home/joao/Documents/Snacks_MVC_SqlServer/SnackApp/SnackApp/obj/Debug/net5.0/Razor/Views/Pedido/CheckoutCompleto.cshtml.g.cs
+/home/joao/Documents/Snacks_MVC_SqlServer/SnackApp/SnackApp/obj/Debug/net5.0/Razor/Views/Account/Login.cshtml.g.cs
+/home/joao/Documents/Snacks_MVC_SqlServer/SnackApp/SnackApp/obj/Debug/net5.0/Razor/Views/Account/Logout.cshtml.g.cs
+/home/joao/Documents/Snacks_MVC_SqlServer/SnackApp/SnackApp/obj/Debug/net5.0/Razor/Views/Account/Register.cshtml.g.cs
+/home/joao/Documents/Snacks_MVC_SqlServer/SnackApp/SnackApp/obj/Debug/net5.0/Razor/Views/Shared/_LoginPartial.cshtml.g.cs

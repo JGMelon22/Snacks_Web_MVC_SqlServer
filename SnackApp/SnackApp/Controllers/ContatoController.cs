@@ -7,6 +7,7 @@ namespace SnackApp.Controllers
         // GET
         public IActionResult Index()
         {
+            // Verifies if user is authenticated
             return View();
         }
     }

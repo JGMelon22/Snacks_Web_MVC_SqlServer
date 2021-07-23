@@ -57,8 +57,6 @@ namespace SnackApp.Models
             ErrorMessage = "O email não possui um formato correto")]
         public string Email { get; set; }
 
-        // [BindNever] [ScaffoldColumn(false)] public decimal PedidoTotal { get; set; }
-
         [BindNever]
         [ScaffoldColumn(false)]
         [Column(TypeName = "decimal(18,2)")]
