@@ -1,5 +1,5 @@
 # Sales Web MVC
-A basic CRUD web page for register sellers and departments made using ASP.NET Core MVC on Linux connected to SQL Server.
+A basic CRUD web page which simluates a Snack Store experience made using ASP.NET Core MVC on Linux connected to SQL Server.
 
 # Used tools:
 - Rider IDE;
@@ -26,9 +26,19 @@ A basic CRUD web page for register sellers and departments made using ASP.NET Co
 - Any doubts, look at the oficial Microsoft documentation: https://docs.microsoft.com/en-us/ef/core/cli/dotnet and https://docs.microsoft.com/en-us/ef/core/managing-schemas/migrations/?tabs=dotnet-core-cli
 - Inside the file "appsettings.json", change the connection string to your SQL Server instance according to your needs.
 
-- TODO: change the image to the new connection string name (same print otherwise)
 ![Screenshot_20210719_200323](https://user-images.githubusercontent.com/73988556/126238586-0de79583-6c9b-46ac-9adf-b5af345b979e.png)
 
 # Page illustration
+![Screenshot_20210723_145708](https://user-images.githubusercontent.com/73988556/126823018-4d66c321-7543-4d90-a3ef-d16ffa396a5a.png)
 
-TBA
+![Screenshot_20210723_145714](https://user-images.githubusercontent.com/73988556/126823026-b77d96ad-efda-4fc5-93ea-39ce7523a748.png)
+
+![Screenshot_20210723_145732](https://user-images.githubusercontent.com/73988556/126823039-b6a470c8-7437-4c3d-a679-c59cff326666.png)
+
+![Screenshot_20210723_150027](https://user-images.githubusercontent.com/73988556/126823065-accbfc5f-51ca-4911-9a8b-72484878686e.png)
+
+![Screenshot_20210723_150035](https://user-images.githubusercontent.com/73988556/126823075-e587b2dd-f1c7-4382-b214-4ad118433b44.png)
+
+![Screenshot_20210723_150043](https://user-images.githubusercontent.com/73988556/126823093-66a7fc8c-5eb7-4fb7-acab-9748aa93d0a1.png)
+
+![Screenshot_20210723_150050](https://user-images.githubusercontent.com/73988556/126823099-7ebf1deb-f1c0-40cf-a5c3-4010695af430.png)
