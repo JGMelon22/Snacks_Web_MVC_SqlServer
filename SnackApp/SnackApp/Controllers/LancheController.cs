@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 using System.Linq;
 using Microsoft.AspNetCore.Mvc;
@@ -24,7 +23,6 @@ namespace SnackApp.Controllers
         // Action method which returns the snacks
         public IActionResult List(string categoria)
         {
-            var _categoria = categoria;
             IEnumerable<Lanche> lanches;
             var categoriaAtual = string.Empty;
 
@@ -37,18 +35,12 @@ namespace SnackApp.Controllers
             }
             else
             {
-                // StringComparison ignores UpperCase x LowerCase
-                if (string.Equals("Normal", _categoria, StringComparison.OrdinalIgnoreCase))
-                    lanches = _lancheRepository.Lanches
-                        .Where(l => l.Categoria.CategoriaNome.Equals("Normal"))
-                        .OrderBy(l => l.Nome);
+                //code optimized to be able to include other categories
+                lanches = _lancheRepository.Lanches
+                    .Where(l => l.Categoria.CategoriaNome.Equals(categoria))
+                    .OrderBy(l => l.Nome);
 
-                else
-                    lanches = _lancheRepository.Lanches
-                        .Where(l => l.Categoria.CategoriaNome.Equals("Natural"))
-                        .OrderBy(l => l.Nome);
-
-                categoriaAtual = _categoria;
+                categoriaAtual = categoria;
             }
 
             // Applying the ViwModel pattern
