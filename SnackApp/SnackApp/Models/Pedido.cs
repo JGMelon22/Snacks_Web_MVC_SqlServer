@@ -9,7 +9,8 @@ namespace SnackApp.Models
     public class Pedido
     {
         // prop
-        [BindNever] public int PedidoID { get; set; }
+        // [BindNever]
+        public int PedidoID { get; set; }
 
         public List<PedidoDetalhe> PedidoItens { get; set; }
 
@@ -64,6 +65,23 @@ namespace SnackApp.Models
         public decimal PedidoTotal { get; set; }
 
 
-        [BindNever] [ScaffoldColumn(false)] public DateTime PedidoEnviado { get; set; }
+        [Display(Name = "Data/Hora da Recebimento do Pedido")]
+        [DataType(DataType.DateTime)]
+
+        // Any error, change to MM/dd/yyyy hh:mm
+        [DisplayFormat(DataFormatString = "{0: dd/MM/yyyy hh:mm}", ApplyFormatInEditMode = true)]
+
+
+        public DateTime PedidoEnviado { get; set; }
+
+
+        [Display(Name = "Data/Hora da Entrega do Pedido")]
+        [DataType(DataType.DateTime)]
+
+        // Any error, change to MM/dd/yyyy hh:mm
+        [DisplayFormat(DataFormatString = "{0: dd/MM/yyyy hh:mm}", ApplyFormatInEditMode = true)]
+
+        // Nullable
+        public DateTime? PedidoEntregueEm { get; set; }
     }
 }

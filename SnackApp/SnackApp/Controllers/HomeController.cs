@@ -7,14 +7,7 @@ namespace SnackApp.Controllers
     public class HomeController : Controller
     {
         private readonly ILancheRepository _lancheRepository;
-        // private readonly ILogger<HomeController> _logger;
 
-        /*
-        public HomeController(ILogger<HomeController> logger)
-        {
-            _logger = logger;
-        }
-        */
         // Dependency injection
         public HomeController(ILancheRepository lancheRepository)
         {
@@ -33,12 +26,9 @@ namespace SnackApp.Controllers
             return View(homeViewModel);
         }
 
-        /*
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
+        public ViewResult AccessDenied()
         {
-            return View(new ErrorViewModel {RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier});
+            return View();
         }
-        */
     }
 }

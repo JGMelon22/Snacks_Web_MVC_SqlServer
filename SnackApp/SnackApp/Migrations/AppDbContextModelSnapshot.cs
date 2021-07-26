@@ -345,6 +345,9 @@ namespace SnackApp.Migrations
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
 
+                    b.Property<DateTime?>("PedidoEntregueEm")
+                        .HasColumnType("datetime2");
+
                     b.Property<DateTime>("PedidoEnviado")
                         .HasColumnType("datetime2");
 

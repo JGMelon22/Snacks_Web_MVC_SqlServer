@@ -35,6 +35,9 @@ namespace SnackApp
                 .AddEntityFrameworkStores<AppDbContext>()
                 .AddDefaultTokenProviders();
 
+            // When normal user try to access admin area, he will vbe redirected to "Home/AccessDenied"
+            services.ConfigureApplicationCookie(options => options.AccessDeniedPath = "/Home/AccessDenied");
+
             services.AddMvc();
 
             /*
@@ -83,12 +86,10 @@ namespace SnackApp
 
             app.UseEndpoints(endpoints =>
             {
-                // Change here for Admin
-                // routes.MapRoute(
-                // name:"AdminArea", 
-                // pattern : "{area:exist}/{controller=Admin}/{action=Index}/{id?"}
-                // );
-
+                // Setup path for Areas
+                endpoints.MapControllerRoute(
+                    "AdminArea",
+                    "{area:exists}/{controller=Admin}/{action=Index}/{id?}");
 
                 endpoints.MapControllerRoute(
                     "categoriaFiltro",

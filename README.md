@@ -5,18 +5,19 @@ A basic CRUD web page which simluates a Snack Store experience made using ASP.NE
 - Rider IDE;
 - Docker (to host SQL Server);
 - DBeaver (to model the database and create the queries);
-- .Net Core 5.0.3
-- .Net Core Entity Framework 5.0.8
+- .Net Core 5.0.3;
+- .Net Core Entity Framework 5.0.8.
 
 # NuGet packages used:
-- Microsoft.EntityFrameworkCore (5.0.8)
-- Microsoft.AspNetCore.Identity.EntityFrameworkCore (5.0.8)
-- Microsoft.EntityFrameworkCore.Design (5.0.8)
-- Microsoft.EntityFrameworkCore.SqlServer (5.0.8)
-- Microsoft.Data.SqlClient (3.0.0)
-- Microsoft.EntityFrameworkCore.Relational (5.0.8)
-- Microsoft.EntityFrameworkCore.Tools (5.0.8)
-- Microsoft.VisualStudio.Web.CodeGeneration.Design (5.0.2)
+- Microsoft.EntityFrameworkCore (5.0.8);
+- Microsoft.AspNetCore.Identity.EntityFrameworkCore (5.0.8);
+- Microsoft.EntityFrameworkCore.Design (5.0.8);
+- Microsoft.EntityFrameworkCore.SqlServer (5.0.8);
+- Microsoft.Data.SqlClient (3.0.0);
+- Microsoft.EntityFrameworkCore.Relational (5.0.8);
+- Microsoft.EntityFrameworkCore.Tools (5.0.8);
+- Microsoft.VisualStudio.Web.CodeGeneration.Design (5.0.2);
+- ReflectionIT.Mvc.Paging (5.1.1).
 
 # How to use?
 - First, you must have SQL Server installed on your machine (natively or via Docker) and .Net Core 5.0 or greater;

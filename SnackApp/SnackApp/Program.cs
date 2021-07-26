@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
+using SnackApp.Extensao;
 
 namespace SnackApp
 {
@@ -7,7 +8,11 @@ namespace SnackApp
     {
         public static void Main(string[] args)
         {
-            CreateHostBuilder(args).Build().Run();
+            // We created the CreateAdminRole extension method
+            CreateHostBuilder(args)
+                .Build()
+                .CreateAdminRole()
+                .Run();
         }
 
         public static IHostBuilder CreateHostBuilder(string[] args)
