@@ -1,5 +1,5 @@
 # Sales Web MVC
-A basic CRUD web page which simluates a Snack Store experience made using ASP.NET Core MVC on Linux connected to SQL Server.
+A basic CRUD web page which simulates a Snack Store experience made using ASP.NET Core MVC on Linux connected to SQL Server.
 
 # Used tools:
 - Rider IDE;
