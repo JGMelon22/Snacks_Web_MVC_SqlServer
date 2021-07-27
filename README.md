@@ -30,7 +30,7 @@ A basic CRUD web page which simulates a Snack Store experience made using ASP.NE
 ![Screenshot_20210719_200323](https://user-images.githubusercontent.com/73988556/126238586-0de79583-6c9b-46ac-9adf-b5af345b979e.png)
 
 # Page illustration
-![Screenshot_20210723_145708](https://user-images.githubusercontent.com/73988556/126823018-4d66c321-7543-4d90-a3ef-d16ffa396a5a.png)
+![Screenshot_20210727_162013](https://user-images.githubusercontent.com/73988556/127214990-27811c94-e590-433f-b338-833144dc1ceb.png)
 
 ![Screenshot_20210723_145714](https://user-images.githubusercontent.com/73988556/126823026-b77d96ad-efda-4fc5-93ea-39ce7523a748.png)
 
