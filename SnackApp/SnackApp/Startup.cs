@@ -40,6 +40,10 @@ namespace SnackApp
             // When normal user try to access admin area, he will vbe redirected to "Home/AccessDenied"
             services.ConfigureApplicationCookie(options => options.AccessDeniedPath = "/Home/AccessDenied");
 
+            // Link file to get section value
+            // from the Json file
+            services.Configure<ConfigurationImagens>(Configuration.GetSection("ConfigurationPastaImagens"));
+
             services.AddMvc();
 
             /*
@@ -87,6 +91,8 @@ namespace SnackApp
             }
 
             app.UseHttpsRedirection();
+
+            // Middleware
             app.UseStaticFiles();
             app.UseSession();
 

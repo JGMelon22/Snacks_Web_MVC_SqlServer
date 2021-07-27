@@ -646,3 +646,6 @@
 /home/joao/Documents/Snacks_MVC_SqlServer/SnackApp/SnackApp/obj/Debug/net5.0/Razor/Areas/Admin/Views/AdminPedidos/PedidoLanches.cshtml.g.cs
 /home/joao/Documents/Snacks_MVC_SqlServer/SnackApp/SnackApp/obj/Debug/net5.0/Razor/Areas/Admin/Views/AdminRelatorioVendas/Index.cshtml.g.cs
 /home/joao/Documents/Snacks_MVC_SqlServer/SnackApp/SnackApp/obj/Debug/net5.0/Razor/Areas/Admin/Views/AdminRelatorioVendas/RelatorioVendasSimples.cshtml.g.cs
+/home/joao/Documents/Snacks_MVC_SqlServer/SnackApp/SnackApp/obj/Debug/net5.0/Razor/Areas/Admin/Views/AdminImagens/Index.cshtml.g.cs
+/home/joao/Documents/Snacks_MVC_SqlServer/SnackApp/SnackApp/obj/Debug/net5.0/Razor/Areas/Admin/Views/AdminImagens/UploadFiles.cshtml.g.cs
+/home/joao/Documents/Snacks_MVC_SqlServer/SnackApp/SnackApp/obj/Debug/net5.0/Razor/Areas/Admin/Views/AdminImagens/GetImagens.cshtml.g.cs
