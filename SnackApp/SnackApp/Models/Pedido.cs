@@ -39,9 +39,13 @@ namespace SnackApp.Models
         [StringLength(10, MinimumLength = 8)]
         public string Cep { get; set; }
 
-        [StringLength(10)] public string Estado { get; set; }
+        [Required(ErrorMessage = "Informe o seu estado.")]
+        [StringLength(10)]
+        public string Estado { get; set; }
 
-        [StringLength(50)] public string Cidade { get; set; }
+        [Required(ErrorMessage = "Informe sua cidade.")]
+        [StringLength(50)]
+        public string Cidade { get; set; }
 
         [Required(ErrorMessage = "Informe o seu telefone")]
         [StringLength(25)]
@@ -74,6 +78,11 @@ namespace SnackApp.Models
 
         public DateTime PedidoEnviado { get; set; }
 
+        // new prop for the report
+        [BindNever]
+        [ScaffoldColumn(false)]
+        [Display(Name = "Itens no Pedido")]
+        public int TotalItensPedido { get; set; }
 
         [Display(Name = "Data/Hora da Entrega do Pedido")]
         [DataType(DataType.DateTime)]

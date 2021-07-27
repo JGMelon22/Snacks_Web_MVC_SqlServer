@@ -1,14 +1,14 @@
 @model IEnumerable<Lanche>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Lanches";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1>Index</h1>
+<h1>Lanches</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Create">Adicionar um novo lanche</a>
 </p>
 <table class="table">
     <thead>
@@ -75,9 +75,9 @@
                 @Html.DisplayFor(modelItem => item.Categoria.CategoriaId)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.LancheId">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.LancheId">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.LancheId">Delete</a>
+                <a asp-action="Edit" asp-route-id="@item.LancheId">Editar</a> |
+                <a asp-action="Details" asp-route-id="@item.LancheId">Detalhes</a> |
+                <a asp-action="Delete" asp-route-id="@item.LancheId">Deletar</a>
             </td>
         </tr>
     }

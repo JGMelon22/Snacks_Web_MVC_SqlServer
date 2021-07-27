@@ -642,3 +642,7 @@
 /home/joao/Documents/Snacks_MVC_SqlServer/SnackApp/SnackApp/bin/Debug/net5.0/ReflectionIT.Mvc.Paging.dll
 /home/joao/Documents/Snacks_MVC_SqlServer/SnackApp/SnackApp/obj/Debug/net5.0/SnackApp.MvcApplicationPartsAssemblyInfo.cs
 /home/joao/Documents/Snacks_MVC_SqlServer/SnackApp/SnackApp/obj/Debug/net5.0/Razor/Views/Error/Error.cshtml.g.cs
+/home/joao/Documents/Snacks_MVC_SqlServer/SnackApp/SnackApp/obj/Debug/net5.0/Razor/Areas/Admin/Views/AdminPedidos/PedidoNotFound.cshtml.g.cs
+/home/joao/Documents/Snacks_MVC_SqlServer/SnackApp/SnackApp/obj/Debug/net5.0/Razor/Areas/Admin/Views/AdminPedidos/PedidoLanches.cshtml.g.cs
+/home/joao/Documents/Snacks_MVC_SqlServer/SnackApp/SnackApp/obj/Debug/net5.0/Razor/Areas/Admin/Views/AdminRelatorioVendas/Index.cshtml.g.cs
+/home/joao/Documents/Snacks_MVC_SqlServer/SnackApp/SnackApp/obj/Debug/net5.0/Razor/Areas/Admin/Views/AdminRelatorioVendas/RelatorioVendasSimples.cshtml.g.cs

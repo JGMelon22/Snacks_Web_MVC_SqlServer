@@ -6,6 +6,8 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using ReflectionIT.Mvc.Paging;
+using SnackApp.Areas.Admin.Servicos;
 using SnackApp.Context;
 using SnackApp.Models;
 using SnackApp.Repositories;
@@ -48,11 +50,22 @@ namespace SnackApp
             services.AddTransient<ILancheRepository, LancheRepository>();
             services.AddTransient<IPedidoRepository, PedidoRepository>();
 
+            // Register the service RelatorioVendasService
+            services.AddScoped<RelatorioVendasService>();
+
             // Allow us to have access to the session context
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 
             // Defines the shopping cart
             services.AddScoped(cp => CarrinhoCompra.GetCarrinho(cp));
+
+            // Paging service
+            services.AddPaging(options =>
+            {
+                options.ViewName = "Bootstrap4";
+                options.PageParameterName = "pageindex";
+            });
+
             services.AddMemoryCache();
             services.AddSession();
         }

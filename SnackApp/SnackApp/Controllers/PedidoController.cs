@@ -29,6 +29,9 @@ namespace SnackApp.Controllers
         [Authorize]
         public IActionResult Checkout(Pedido pedido)
         {
+            var precoTotalPedido = 0.0m;
+            var totalItensPedido = 0;
+
             var items = _carrinhoCompra.GetCarrinhoCompraItens();
             _carrinhoCompra.CarrinhoCompraItens = items;
 
@@ -36,6 +39,20 @@ namespace SnackApp.Controllers
             // if not, error
             if (_carrinhoCompra.CarrinhoCompraItens.Count == 0)
                 ModelState.AddModelError("", "Seu carrinho está vazio. Inclua um lanche...");
+
+
+            // Calculates the total order
+            foreach (var item in items)
+            {
+                totalItensPedido += item.Quantidade;
+                precoTotalPedido += item.Lanche.Preco * item.Quantidade;
+            }
+
+            // Assign the total order itens
+            pedido.TotalItensPedido = totalItensPedido;
+
+            // Assign the total order to order it self
+            pedido.PedidoTotal = precoTotalPedido;
 
             // If there is a snack, and it is valid
             // checkout
