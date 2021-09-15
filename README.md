@@ -23,7 +23,7 @@ A basic CRUD web page which simulates a Snack Store experience made using ASP.NE
 - First, you must have SQL Server installed on your machine (natively or via Docker) and .Net Core 5.0 or greater;
 - Clone the repository;
 - On PowerShell or Bash, run the following command to download the Entity Framework `dotnet tool install --global dotnet-ef`;
-- Again, on PowerSehll or Bash, go to the project file (*/Snacks_MVC_SqlServer/SnackApp/*) and update the database using EF command: `dotnet ef database update`;
+- Again, on PowerShell or Bash, go to the project file (*/Snacks_MVC_SqlServer/SnackApp/*) and update the database using EF command: `dotnet ef database update`;
 - Any doubts, look at the oficial Microsoft documentation: https://docs.microsoft.com/en-us/ef/core/cli/dotnet and https://docs.microsoft.com/en-us/ef/core/managing-schemas/migrations/?tabs=dotnet-core-cli
 - Inside the file "appsettings.json", change the connection string to your SQL Server instance according to your needs.
 
