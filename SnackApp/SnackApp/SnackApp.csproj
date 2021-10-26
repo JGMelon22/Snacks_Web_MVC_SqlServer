@@ -5,59 +5,57 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.2.0" />
-      <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="5.0.8" />
-      <PackageReference Include="Microsoft.Data.SqlClient" Version="3.0.0" />
-      <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.8" />
-      <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.8">
-        <PrivateAssets>all</PrivateAssets>
-        <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-      </PackageReference>
-      <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="5.0.8" />
-      <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="5.0.8" />
-      <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.8" />
-      <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.8">
-        <PrivateAssets>all</PrivateAssets>
-        <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-      </PackageReference>
-      <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="5.0.2" />
-      <PackageReference Include="ReflectionIT.Mvc.Paging" Version="5.1.1" />
+        <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="5.0.11" />
+        <PackageReference Include="Microsoft.Data.SqlClient" Version="3.0.1" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.11" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.11">
+          <PrivateAssets>all</PrivateAssets>
+          <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="5.0.11" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.11" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.11">
+          <PrivateAssets>all</PrivateAssets>
+          <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+        <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="5.0.2" />
+        <PackageReference Include="ReflectionIT.Mvc.Paging" Version="5.1.1" />
     </ItemGroup>
 
     <ItemGroup>
-      <_ContentIncludedByDefault Remove="wwwroot\Imagens_Lanches31\acessonegado.png" />
-      <_ContentIncludedByDefault Remove="wwwroot\Imagens_Lanches31\adminarea.jpg" />
-      <_ContentIncludedByDefault Remove="wwwroot\Imagens_Lanches31\carousel1.jpg" />
-      <_ContentIncludedByDefault Remove="wwwroot\Imagens_Lanches31\carousel11.jpg" />
-      <_ContentIncludedByDefault Remove="wwwroot\Imagens_Lanches31\carousel12.jpg" />
-      <_ContentIncludedByDefault Remove="wwwroot\Imagens_Lanches31\carousel13.jpg" />
-      <_ContentIncludedByDefault Remove="wwwroot\Imagens_Lanches31\carousel14.jpg" />
-      <_ContentIncludedByDefault Remove="wwwroot\Imagens_Lanches31\carousel2.jpg" />
-      <_ContentIncludedByDefault Remove="wwwroot\Imagens_Lanches31\carousel3.jpg" />
-      <_ContentIncludedByDefault Remove="wwwroot\Imagens_Lanches31\carousel4.jpg" />
-      <_ContentIncludedByDefault Remove="wwwroot\Imagens_Lanches31\carousel5.jpg" />
-      <_ContentIncludedByDefault Remove="wwwroot\Imagens_Lanches31\cart-5-16.ico" />
-      <_ContentIncludedByDefault Remove="wwwroot\Imagens_Lanches31\check-icon32.png" />
-      <_ContentIncludedByDefault Remove="wwwroot\Imagens_Lanches31\check-icon48.png" />
-      <_ContentIncludedByDefault Remove="wwwroot\Imagens_Lanches31\delete.png" />
-      <_ContentIncludedByDefault Remove="wwwroot\Imagens_Lanches31\Envelope-icon.png" />
-      <_ContentIncludedByDefault Remove="wwwroot\Imagens_Lanches31\Envelope-icon24.png" />
-      <_ContentIncludedByDefault Remove="wwwroot\Imagens_Lanches31\error1.jpg" />
-      <_ContentIncludedByDefault Remove="wwwroot\Imagens_Lanches31\facapedido1.jpg" />
-      <_ContentIncludedByDefault Remove="wwwroot\Imagens_Lanches31\faleconosco1.jpg" />
-      <_ContentIncludedByDefault Remove="wwwroot\Imagens_Lanches31\Full-Cart-icon.png" />
-      <_ContentIncludedByDefault Remove="wwwroot\Imagens_Lanches31\Home-icon.png" />
-      <_ContentIncludedByDefault Remove="wwwroot\Imagens_Lanches31\Home-icon48.png" />
-      <_ContentIncludedByDefault Remove="wwwroot\Imagens_Lanches31\Home-iconred.png" />
-      <_ContentIncludedByDefault Remove="wwwroot\Imagens_Lanches31\login1.jpg" />
-      <_ContentIncludedByDefault Remove="wwwroot\Imagens_Lanches31\phone-app-icon.png" />
-      <_ContentIncludedByDefault Remove="wwwroot\Imagens_Lanches31\phone-app-icon48.png" />
-      <_ContentIncludedByDefault Remove="wwwroot\Imagens_Lanches31\registro1.jpg" />
-      <_ContentIncludedByDefault Remove="wwwroot\Imagens_Lanches31\remove.ico" />
+        <_ContentIncludedByDefault Remove="wwwroot\Imagens_Lanches31\acessonegado.png" />
+        <_ContentIncludedByDefault Remove="wwwroot\Imagens_Lanches31\adminarea.jpg" />
+        <_ContentIncludedByDefault Remove="wwwroot\Imagens_Lanches31\carousel1.jpg" />
+        <_ContentIncludedByDefault Remove="wwwroot\Imagens_Lanches31\carousel11.jpg" />
+        <_ContentIncludedByDefault Remove="wwwroot\Imagens_Lanches31\carousel12.jpg" />
+        <_ContentIncludedByDefault Remove="wwwroot\Imagens_Lanches31\carousel13.jpg" />
+        <_ContentIncludedByDefault Remove="wwwroot\Imagens_Lanches31\carousel14.jpg" />
+        <_ContentIncludedByDefault Remove="wwwroot\Imagens_Lanches31\carousel2.jpg" />
+        <_ContentIncludedByDefault Remove="wwwroot\Imagens_Lanches31\carousel3.jpg" />
+        <_ContentIncludedByDefault Remove="wwwroot\Imagens_Lanches31\carousel4.jpg" />
+        <_ContentIncludedByDefault Remove="wwwroot\Imagens_Lanches31\carousel5.jpg" />
+        <_ContentIncludedByDefault Remove="wwwroot\Imagens_Lanches31\cart-5-16.ico" />
+        <_ContentIncludedByDefault Remove="wwwroot\Imagens_Lanches31\check-icon32.png" />
+        <_ContentIncludedByDefault Remove="wwwroot\Imagens_Lanches31\check-icon48.png" />
+        <_ContentIncludedByDefault Remove="wwwroot\Imagens_Lanches31\delete.png" />
+        <_ContentIncludedByDefault Remove="wwwroot\Imagens_Lanches31\Envelope-icon.png" />
+        <_ContentIncludedByDefault Remove="wwwroot\Imagens_Lanches31\Envelope-icon24.png" />
+        <_ContentIncludedByDefault Remove="wwwroot\Imagens_Lanches31\error1.jpg" />
+        <_ContentIncludedByDefault Remove="wwwroot\Imagens_Lanches31\facapedido1.jpg" />
+        <_ContentIncludedByDefault Remove="wwwroot\Imagens_Lanches31\faleconosco1.jpg" />
+        <_ContentIncludedByDefault Remove="wwwroot\Imagens_Lanches31\Full-Cart-icon.png" />
+        <_ContentIncludedByDefault Remove="wwwroot\Imagens_Lanches31\Home-icon.png" />
+        <_ContentIncludedByDefault Remove="wwwroot\Imagens_Lanches31\Home-icon48.png" />
+        <_ContentIncludedByDefault Remove="wwwroot\Imagens_Lanches31\Home-iconred.png" />
+        <_ContentIncludedByDefault Remove="wwwroot\Imagens_Lanches31\login1.jpg" />
+        <_ContentIncludedByDefault Remove="wwwroot\Imagens_Lanches31\phone-app-icon.png" />
+        <_ContentIncludedByDefault Remove="wwwroot\Imagens_Lanches31\phone-app-icon48.png" />
+        <_ContentIncludedByDefault Remove="wwwroot\Imagens_Lanches31\registro1.jpg" />
+        <_ContentIncludedByDefault Remove="wwwroot\Imagens_Lanches31\remove.ico" />
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="wwwroot\images\produtos" />
+        <Folder Include="wwwroot\images\produtos" />
     </ItemGroup>
 
 </Project>

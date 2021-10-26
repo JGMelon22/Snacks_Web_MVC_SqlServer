@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/home/joao/Documents/Snacks_MVC_SqlServer/SnackApp/SnackApp/SnackApp.csproj": {}
+    "/home/joaog/Documents/Snacks_Web_MVC_SqlServer/SnackApp/SnackApp/SnackApp.csproj": {}
   },
   "projects": {
-    "/home/joao/Documents/Snacks_MVC_SqlServer/SnackApp/SnackApp/SnackApp.csproj": {
+    "/home/joaog/Documents/Snacks_Web_MVC_SqlServer/SnackApp/SnackApp/SnackApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/joao/Documents/Snacks_MVC_SqlServer/SnackApp/SnackApp/SnackApp.csproj",
+        "projectUniqueName": "/home/joaog/Documents/Snacks_Web_MVC_SqlServer/SnackApp/SnackApp/SnackApp.csproj",
         "projectName": "SnackApp",
-        "projectPath": "/home/joao/Documents/Snacks_MVC_SqlServer/SnackApp/SnackApp/SnackApp.csproj",
-        "packagesPath": "/home/joao/.nuget/packages/",
-        "outputPath": "/home/joao/Documents/Snacks_MVC_SqlServer/SnackApp/SnackApp/obj/",
+        "projectPath": "/home/joaog/Documents/Snacks_Web_MVC_SqlServer/SnackApp/SnackApp/SnackApp.csproj",
+        "packagesPath": "/home/joaog/.nuget/packages/",
+        "outputPath": "/home/joaog/Documents/Snacks_Web_MVC_SqlServer/SnackApp/SnackApp/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/joao/.nuget/NuGet/NuGet.Config"
+          "/home/joaog/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -38,45 +38,37 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
-            "Microsoft.AspNetCore.Identity": {
-              "target": "Package",
-              "version": "[2.2.0, )"
-            },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[5.0.8, )"
+              "version": "[5.0.11, )"
             },
             "Microsoft.Data.SqlClient": {
               "target": "Package",
-              "version": "[3.0.0, )"
+              "version": "[3.0.1, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[5.0.8, )"
+              "version": "[5.0.11, )"
             },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[5.0.8, )"
+              "version": "[5.0.11, )"
             },
             "Microsoft.EntityFrameworkCore.Relational": {
               "target": "Package",
-              "version": "[5.0.8, )"
+              "version": "[5.0.11, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[5.0.8, )"
-            },
-            "Microsoft.EntityFrameworkCore.Sqlite": {
-              "target": "Package",
-              "version": "[5.0.8, )"
+              "version": "[5.0.11, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[5.0.8, )"
+              "version": "[5.0.11, )"
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
@@ -105,7 +97,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/home/joao/.dotnet/sdk/5.0.205/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.205/RuntimeIdentifierGraph.json"
         }
       }
     }
